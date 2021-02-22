@@ -1,0 +1,15 @@
+﻿REGEDIT
+; Возможно, этот файл .REG используется программой установки.
+;   Если программа SETUP недоступна, записи, расположенные ниже, будут зарегистрированы
+;   в InitInstance автоматически с вызовом в
+;   CWinApp::RegisterShellFileTypes и COleObjectFactory::UpdateRegistryAll.
+
+HKEY_CLASSES_ROOT\.SeleznevMFC = SeleznevLR3.Document
+HKEY_CLASSES_ROOT\SeleznevLR3.Document\shell\open\command = SeleznevLR3.EXE %1
+HKEY_CLASSES_ROOT\SeleznevLR3.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\SeleznevLR3.Document\shell\open\ddeexec\application = SeleznevLR3
+    ; примечание: приложение необязательно
+    ;  (по умолчанию для имени приложения в команде)
+
+HKEY_CLASSES_ROOT\SeleznevLR3.Document = SeleznevLR3.Document
+
